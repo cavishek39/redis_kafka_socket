@@ -7,18 +7,18 @@ type MessageType = {
   message: string
 }
 const pub = new Redis({
-  host: 'redis-da38146-cavishek39-c056.a.aivencloud.com',
+  host: process.env.SOCKET || '',
   port: 14595,
   username: 'default',
-  password: 'AVNS_T2W5FNvtAzSUeVNmsEj',
+  password: process.env.SOCKET_PASSWORD || '',
   maxRetriesPerRequest: 100,
 })
 
 const sub = new Redis({
-  host: 'redis-da38146-cavishek39-c056.a.aivencloud.com',
+  host: process.env.SOCKET || '',
   port: 14595,
   username: 'default',
-  password: 'AVNS_T2W5FNvtAzSUeVNmsEj',
+  password: process.env.SOCKET_PASSWORD || '',
   maxRetriesPerRequest: 100,
 })
 

@@ -4,10 +4,10 @@ import path from 'path'
 import prismaClient from './prisma'
 
 const kafka = new Kafka({
-  brokers: ['kafka-10e5ee67-cavishek39-c056.a.aivencloud.com:14608'],
+  brokers: [process.env.KAFKA || ''],
   sasl: {
-    username: 'avnadmin',
-    password: 'AVNS_b8vgbBLXtZ7YTLWdkSI',
+    username: process.env.KAFKA_USERNAME || '',
+    password: process.env.KAFKA_PASSWORD || '',
     mechanism: 'plain',
   },
   ssl: {
