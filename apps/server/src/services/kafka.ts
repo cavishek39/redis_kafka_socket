@@ -47,7 +47,7 @@ export async function startMessageConsumer() {
     autoCommit: true,
     eachMessage: async ({ message, pause }) => {
       if (!message.value) return
-      console.log(`New message received`)
+      // console.log(`New message received`)
 
       try {
         await prismaClient.message.create({

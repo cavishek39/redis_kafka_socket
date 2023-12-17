@@ -11,7 +11,12 @@ export default function Page() {
 
   return (
     <div>
-      <div>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
         <input
           onChange={(e) => setMessage(e.target.value)}
           className={classes['chat-input']}
@@ -24,8 +29,8 @@ export default function Page() {
         </button>
       </div>
       <div>
-        {messages.map((e) => (
-          <li>{e}</li>
+        {messages.map((e, index) => (
+          <li key={e + '' + index?.toString()}>{e}</li>
         ))}
       </div>
     </div>
