@@ -13,7 +13,8 @@
         "KAFKA_PASSWORD=AVNS_b8vgbBLXtZ7YTLWdkSI",
         "SOCKET=redis-da38146-cavishek39-c056.a.aivencloud.com",
         "SOCKET_PORT=14595",
-        "SOCKET_PASSWORD=AVNS_T2W5FNvtAzSUeVNmsEj"
+        "SOCKET_PASSWORD=AVNS_T2W5FNvtAzSUeVNmsEj",
+        "PORT=14595"
       ],
       "outputs": [".next/**", "!.next/cache/**"]
     },
