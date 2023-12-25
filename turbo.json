@@ -4,6 +4,17 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
+      "env": [
+        "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_c2F2ZWQtb2N0b3B1cy0zMy5jbGVyay5hY2NvdW50cy5kZXYk",
+        "CLERK_SECRET_KEY=sk_test_UNq3WaPQHVSB2sNK5lPqAWfjJ6C3Mo0HFOjxQWpwRT",
+        "DATABASE_URL=postgres://avnadmin:AVNS_mvb0nmyx3HhLlxX2RKe@pg-17484151-cavishek39-c056.a.aivencloud.com:14595/defaultdb?sslmode=require&sslcert=ca.pem",
+        "KAFKA=kafka-10e5ee67-cavishek39-c056.a.aivencloud.com:14608",
+        "KAFKA_USERNAME=avnadmin",
+        "KAFKA_PASSWORD=AVNS_b8vgbBLXtZ7YTLWdkSI",
+        "SOCKET=redis-da38146-cavishek39-c056.a.aivencloud.com",
+        "SOCKET_PORT=14595",
+        "SOCKET_PASSWORD=AVNS_T2W5FNvtAzSUeVNmsEj"
+      ],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {
